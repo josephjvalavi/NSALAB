@@ -1,0 +1,75 @@
+LINUX COMMANDS
+
+Q1)exam@debian:~/fisat/day2$ cat m1 m2 >> m3
+Q2)
+Q3)exam@debian:~/fisat/day1$ chmod a+w f1
+Q4)exam@debian:~/fisat/day1$ ps -ef
+Q5)exam@debian:~$ pwd
+/home/exam
+
+
+
+
+
+
+
+Q2)shell script
+
+PROGRAM:
+
+echo -e "1) for rectangle \n 2) for triangle \n 3) for circle "
+echo "enter your choice"
+read ch
+case $ch in
+1)echo "enter the lenght and breadth of reactangle"
+read l
+read b
+((a=l*b))
+echo "area of triangle is "$a ;;
+2) echo "enter the length and height of triangle"
+read l
+read b
+((a=(l*b)/2))
+echo "area of triangle =" $a ;;
+3) echo "enter the radius of circle"
+read r
+((a=22*r*r))
+((ar=a/7))
+echo "area of circle is "$ar;;
+*) echo "inalid entry" ;;
+
+esac
+ 
+ OUTPUT
+ 
+ 1) for rectangle 
+ 2) for triangle 
+ 3) for circle 
+enter your choice
+1
+enter the lenght and breadth of reactangle
+2
+3
+area of triangle is 6
+
+1) for rectangle 
+ 2) for triangle 
+ 3) for circle 
+enter your choice
+2
+enter the length and height of triangle
+4
+3
+area of triangle = 6
+exam@debian:~$ ./area
+1) for rectangle 
+ 2) for triangle 
+ 3) for circle 
+enter your choice
+3
+enter the radius of circle
+10
+area of circle is 314
+
+
+
